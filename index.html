@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz Application</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>Quiz Test HTML</h1>
+	</div>
+
+	<div class="one template">
+		<p>1. The common element which describe the web page, is ?</p>
+		<form class="form">
+			<input type="radio" id="myradio1" name="ans" onclick="myFunction()"> heading<br>
+			<input type="radio" id="myradio2" name="ans" onclick="myFunction()"> paragraph<br>
+			<input type="radio" id="myradio3" name="ans" onclick="myFunction()"> list<br>
+			<input type="radio" id="myradio4" name="ans" onclick="myFunction()"> All of these<br>
+		</form>
+
+		<div class="result">
+			<p class="y" id="text1" >Your answer is correct</p>
+			<p class="n" id="text2" >Your answer is wrong</p>
+		</div>
+	</div>
+
+	<div class="two template">
+		<p>2. HTML stands for?</p>
+		<form>
+			<input type="radio" id="myradio5" name="ans" onclick="myFunction2()"> Hyper Text Markup Language<br>
+			<input type="radio" id="myradio6" name="ans" onclick="myFunction2()"> High Text Markup Language<br>
+			<input type="radio" id="myradio7" name="ans" onclick="myFunction2()"> Hyper Tabular Markup Language<br>
+			<input type="radio" id="myradio8" name="ans" onclick="myFunction2()"> None of these<br>
+		</form>
+
+		<div class="result">
+			<p class="y" id="text3">Your answer is correct</p>
+			<p class="n" id="text4">Your answer is wrong</p>
+		</div>
+	</div>
+
+	<div class="three template">
+		<p>3. Markup tags tell the web browser</p>
+		<form>
+			<input type="radio" id="myradio9" name="ans" onclick="myFunction3()"> How to organize the page<br>
+			<input type="radio" id="myradio10" name="ans" onclick="myFunction3()"> How to display the page<br>
+			<input type="radio" id="myradio11" name="ans" onclick="myFunction3()"> How to display message box on page<br>
+			<input type="radio" id="myradio12" name="ans" onclick="myFunction3()"> None of these<br>
+		</form>
+
+		<div class="result">
+			<p class="y" id="text5" >Your answer is correct</p>
+			<p class="n" id="text6" >Your answer is wrong</p>
+		</div>
+	</div>
+	<div class="four template">
+		<p>4. www is based on which model?</p>
+		<form class="form">
+			<input type="radio" id="myradio13" name="ans" onclick="myFunction4()"> Local-server<br>
+			<input type="radio" id="myradio14" name="ans" onclick="myFunction4()"> Client-server<br>
+			<input type="radio" id="myradio15" name="ans" onclick="myFunction4()"> 3-tier<br>
+			<input type="radio" id="myradio16" name="ans" onclick="myFunction4()"> None of these<br>
+		</form>
+
+		<div class="result">
+			<p class="y" id="text7" >Your answer is correct</p>
+			<p class="n" id="text8" >Your answer is wrong</p>
+		</div>
+	</div>
+	<div class="five template">
+		<p>5. What are Empty elements and is it valid?</p>
+		<form class="form">
+			<input type="radio" id="myradio17" name="ans" onclick="myFunction5()"> No, there is no such terms as Empty Element<br>
+			<input type="radio" id="myradio18" name="ans" onclick="myFunction5()"> Empty elements are element with no data<br>
+			<input type="radio" id="myradio19" name="ans" onclick="myFunction5()"> No, it is not valid to use Empty Element<br>
+			<input type="radio" id="myradio20" name="ans" onclick="myFunction5()"> All of these<br>
+		</form>
+
+		<div class="result">
+			<p class="y" id="text9">Your answer is correct</p>
+			<p class="n" id="text10">Your answer is wrong</p>
+		</div>
+	</div>
+
+
+	<div class="footer">
+		<button onclick="result()">Click me to see result</button>
+		<p id="result"></p>
+	</div>
+	
+
+	<script>
+
+		var i = 0;
+		function myFunction() {
+			var box4 = document.getElementById("myradio4");
+			var text1 = document.getElementById("text1");
+			var text2 = document.getElementById("text2");
+
+			if(box4.checked == true){
+				i++;
+				text1.style.display = "block";
+				text2.style.display = "none";
+			} else{
+				text2.style.display = "block";
+				text1.style.display = "none";
+			}
+		}
+		function myFunction2() {
+			var box5 = document.getElementById("myradio5");
+			var text1 = document.getElementById("text3");
+			var text2 = document.getElementById("text4");
+			if(box5.checked == true){
+				i++;
+				text1.style.display = "block";
+				text2.style.display = "none"; 
+			} else{
+				text2.style.display = "block";
+				text1.style.display = "none";
+			}
+		}
+		function myFunction3() {
+			var box10 = document.getElementById("myradio10");
+			var text1 = document.getElementById("text5");
+			var text2 = document.getElementById("text6");
+
+			if(box10.checked == true){
+				i++;
+				text1.style.display = "block";
+				text2.style.display = "none"; 
+			} else{
+				text2.style.display = "block";
+				text1.style.display = "none";
+			}
+		}
+		function myFunction4() {
+
+			var box14 = document.getElementById("myradio14");
+			var text1 = document.getElementById("text7");
+			var text2 = document.getElementById("text8");
+
+			if(box14.checked == true){
+				i++;
+				text1.style.display = "block";
+				text2.style.display = "none"; 
+			} else{
+				text2.style.display = "block";
+				text1.style.display = "none";
+			}
+		}
+		function myFunction5() {
+			var box18 = document.getElementById("myradio18");
+			var text1 = document.getElementById("text9");
+			var text2 = document.getElementById("text10");
+			
+
+			if(box18.checked == true){
+				i++;
+				text1.style.display = "block";
+				text2.style.display = "none";
+				
+			} else{
+				text2.style.display = "block";
+				text1.style.display = "none";
+			}
+		}
+		function result(){
+			document.getElementById("result").innerHTML = "Total correct answer: "+ i +" (5)";
+		}
+
+		
+
+	</script>
+	
+			
+	
+</body>
+</html>

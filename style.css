@@ -1,0 +1,86 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+body{
+	font-size: 20px;
+	margin: 0px auto;
+	width: 85%;
+	height: 80%;
+}
+.header{
+	margin: 0px auto;
+	background: #b3d9ff;
+	height: 50px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 15px;
+	overflow: hidden;
+	
+}
+.template{
+	margin: 0px auto;
+	width: 95%;
+	background: whitesmoke;
+	margin: 10px;
+	height: 250px;
+	border: 1px solid grey;
+	padding: 15px;
+	overflow: hidden;
+}
+.template form{
+	margin-top: 5px;
+	padding:10px 20px;
+	background: #e0e0eb;
+	height: 130px;
+	font-family: arial;
+	overflow: hidden;
+}
+.template p{
+	font-size: 25px;
+	overflow: hidden;
+}
+.result {
+	margin-top: 20px;
+	overflow: hidden;
+	height: 50px;
+	
+}
+.result .y {
+	padding: 12px;
+	font-size: 25px;
+	background: palegreen;
+	display: none;
+	overflow: hidden;
+}
+.result .n{
+	padding: 12px;
+	font-size: 25px;
+	background: #ffb3b3;
+	display: none;
+	overflow: hidden;
+}
+.footer{
+	margin: 0 auto;
+	background: #e6e6ff;
+	height: 100px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 15px;
+	overflow: hidden;	
+	
+}
+.footer button{
+	background: #99ffff;
+	width: 220px;
+	height: 30px;
+	font-size: 20px;
+	border-radius: 20px;
+	border: 1px solid black;
+}
+.footer p{
+	color: green;
+	margin-top: 20px;
+	font-size: 30px;
+}
